@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: #f5f5dc;
+    font-size: 62.5%;
+    font-family:'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 0.4rem;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header{
+    background-color: #000;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+}
+
+    .logoContainer{ 
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+        .logoContainer img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+    .menuContainer{
+        background-color: #FFF;
+    }
+
+        .menuContainer ul{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* gap: 3rem; */ /* Si quiero que se separen */
+            
+            margin: 0;
+        }
+
+            .menuContainer li{
+                flex: 1 0 auto;
+                width: 16.5rem;
+                list-style-type: none;
+                text-align: center; /* alinea el texto dentro de las li */
+                font-size: 1.8rem;
+
+            }
+
+            li:hover{
+                background-color: aliceblue;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000;
+            }  
+
+main{
+    margin: 7vh;
+}
+
+    .sectionContainer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0 3vw;
+
+        background-color: #000;
+        border-radius: 4px;
+        padding: 5rem;
+    }
+
+        .imgContainer img{
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        .textContainer {
+            text-align: left;
+            color: #FFF;
+            width: 70rem;
+           /* min-width: 30rem;*/
+            padding: 3rem;
+        }
+
+        .textContainer h2 {
+            font-size: 7rem;
+            margin-bottom: 1rem;
+        }
+
+        .textContainer p {
+            font-size: 2rem;
+        }
+
+    #nuestrosProductos {
+        margin: 10vh 0 0 0;
+
+    }
+
+    /* contacto.html */
+
+    #contacto {
+        background-color: #000;
+        color: #FFF;
+        font-size: 2rem;
+
+        padding:3vw;
+        border-radius: 4px;
+    }
+
+    .smallText {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+        color: #b8b8b8;
+    }
+
+    #contacto h2 {
+        font-size: 6rem;
+        margin-bottom: 1.2rem;
+    }
+
+
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+
+        gap: 0 4rem;
+    }
+
+        .flexCol1 {
+           max-width: 37vw;     
+        }
+
+        #email, #name{
+            width: 30rem;
+        }
+
+        input {
+            padding: 1rem;
+            margin: 1.5rem 1.5rem 1.5rem 0;
+            border: 1px solid white;
+            background-color: #000;
+            color: #FFF;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        select {
+            width: 14rem;
+            padding: 0.4rem;
+            margin: 2rem 0;
+            border: 1px solid white;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #000;
+            color: #FFF;
+        }
+
+        textarea {
+            width: 30rem;
+            height: 20rem;
+            margin: 1rem 0;
+            padding: 1rem;
+
+            border: 1px solid white;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+            background-color: #000;
+            color: #FFF;
+        }
+
+        .submitButton, .fileButton {
+            background-color: #000;
+            color: #FFF;
+
+            margin: 0.7rem 0;
+        }
+
+
+#sucursalesMain {
+    background-color: #000;
+    border-radius: 4px;
+    padding: 2rem;
+}
+
+    #sucursalesMain h2 {
+        color: #FFF;
+        font-size: 6rem;
+        margin-bottom: 3rem;
+    }
+    .sucursal {
+        margin-bottom: 2rem;
+    }
+
+        .sucFlexContainer {
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .sucursal .imgContainer {
+        margin: 0 3rem 2rem 0;
+        }
+
+        .sucTextContainer {
+            color: #FFF;
+            margin-bottom: 1rem;
+        }
+
+        .sucTextContainer h3 {
+            font-size: 3.5rem;
+        }
+        .sucTextContainer p {
+            font-size: 1.5rem;
+        }
+
+        #sucursalesMain iframe {
+            border-radius: 4px;
+        }
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    height: 7vh;
+    background-color: #000;
+}
+
+.footerIcons {
+    height: 24px;
+    margin: 1.5rem;
+    color: #FFF;
+}
+
+.footerContainer .smallText {
+    margin: 0 0 0 1.5rem;
+}

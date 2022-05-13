@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Burger - Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/2c8d9ebd72.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bodyContainer">
+        <header>
+            <div class="logoContainer">
+                <img src="https://picsum.photos/650/100" alt="Logo de Mr Burger">    
+            </div>
+            <h1>MR. BURGER</h1>
+            <nav>
+                <div class="menuContainer">
+                    <ul>
+                        <a href="index.html"><li>Home</li></a>
+                        <a href="menu.pdf"><li>Menú</li></a>
+                        <a href="sucursales.html"><li>Sucursales</li></a>
+                        <a href="contacto.html"><li>Contacto</li></a>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        
+        <section id="contacto">
+        
+            <h2>Contactate con nosotros</h2>
+
+            <form>
+                <div class="flexCol1">
+                    <p class="smallText">Gracias por contactarte con nosotros.</p>
+                    <p class="smallText">En breve nos comunicaremos al correo proporcionado.</p>
+                    <p class="smallText">mrburger@mail.com</p>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="ejemplo@mail.com" required><br>
+
+                    <label for="phoneNumber">Teléfono: </label>
+                    <input type="tel" id="phoneNumber"><br>
+
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" required><br>
+
+                    <label for="gender">Género: </label>
+                    <select id="gender">
+                        <option value="none" selected disabled hidden>Elija una opción</option>
+                        <option value="female">Mujer</option>
+                        <option value="male">Hombre</option>
+                        <option value="otherGender">Otro</option>
+                        <option value="noAnswer">Prefiero no contestar</option>
+                    </select><br>
+
+                    <label for="subject">Motivo: </label>
+                    <select id="subject" required>
+                        <option value="none" selected disabled hidden>Elija una opción</option>
+                        <option value="feedback">Opiniones</option>
+                        <option value="info">Información</option>
+                        <option value="work">Trabajo</option>
+                        <option value="complaint">Reclamos</option>
+                        <option value="otherSubject">Otro</option>
+                    </select><br>
+
+                </div>
+
+                <div class="flexCol2">
+
+                    <label for="mensaje" placeholder="Mensaje">Dejá tu mensaje:</label><br>
+                    <textarea></textarea><br>
+
+                    <label for="cv">Adjuntá tu CV:</label><br>
+                    <input type="file" class="fileButton"><br>
+
+                    <input type="checkbox" id="sendInfo">
+                    <label for="sendInfo" class="smallText">Deseo recibir promociones y novedades.</label><br>
+
+                    <input type="submit" class="submitButton">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footerContainer">
+            <div class="footerText">
+                <p class="smallText">© 2022 Todos los derechos reservados.</p>
+            </div>
+            <div class="footerSocial">       
+                <!-- FontAwesome -->
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram-square fa-3x footerIcons"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-square fa-3x footerIcons"></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter-square fa-3x footerIcons"></i></a>
+                <p class="smallText">mrburger@mail.com</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
