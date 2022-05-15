@@ -312,11 +312,11 @@ main{
 
     .menuContainer ul {
         flex-direction: column;
-        
     }
 
     .menuContainer li {
         width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.236);
     }
 
     .textContainer h2 {
