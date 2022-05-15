@@ -4,7 +4,8 @@
 }
 
 html{
-    background-color: #f5f5dc;
+  /*  background-color: #f5f5dc;*/
+    background-color: #FEE2C5;
     font-size: 62.5%;
     font-family:'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -21,7 +22,7 @@ h1, h2, h3 {
 
 header{
     background-color: #000;
-    color: white;
+    color: #FFF;
     font-size: 4rem;
     text-align: center;
 }
@@ -50,17 +51,25 @@ header{
             margin: 0;
         }
 
-            .menuContainer li{
+            .menuContainer li {
                 flex: 1 0 auto;
                 width: 16.5rem;
                 list-style-type: none;
                 text-align: center; /* alinea el texto dentro de las li */
                 font-size: 1.8rem;
 
+                -webkit-transition: background-color 0.5s ease-out, font-size 0.5s ease-out;
+                -moz-transition:  background-color 0.5s ease-out, font-size 0.5s ease-out;
+                -o-transition:  background-color 0.5s ease-out, font-size 0.5s ease-out;
+                transition: background-color 0.5s ease-out, font-size 0.5s ease-out;
+
             }
 
-            li:hover{
-                background-color: aliceblue;
+            .menuContainer li:hover {
+               /* background-color: #f0f8ff;*/
+                background-color: #C4DDFF;
+                font-size: 2rem;
+                font-weight: 600;
             }
 
             a{
@@ -87,6 +96,40 @@ main{
         .imgContainer img{
             width: 100%;
             border-radius: 4px;
+        }
+
+        #nosotros img {
+            opacity: 0;
+        }
+
+        #nuestrosProductos img {
+            opacity: 0;
+        }
+
+        @keyframes cambiarImagen1 {
+            0% {
+                background: url('https://picsum.photos/700/550?random=1')
+            }
+            100% {
+                background: url('https://picsum.photos/700/550?random=2')
+            }
+        }
+
+        @keyframes cambiarImagen2 {
+            0% {
+                background: url('https://picsum.photos/700/550?random=3')
+            }
+            100% {
+                background: url('https://picsum.photos/700/550?random=4')
+            }
+        }
+        
+        #nosotros .imgContainer {
+            animation: cambiarImagen1 10s cubic-bezier(0.8, 0, 0, 0.8) infinite alternate;
+        }
+
+        #nuestrosProductos .imgContainer {
+            animation: cambiarImagen2 10s cubic-bezier(0.8, 0, 0, 0.8) infinite alternate;
         }
 
         .textContainer {
@@ -153,11 +196,15 @@ main{
         input {
             padding: 1rem;
             margin: 1.5rem 1.5rem 1.5rem 0;
-            border: 1px solid white;
+            border: 1px solid #FFF;
             background-color: #000;
             color: #FFF;
             border-radius: 4px;
             box-sizing: border-box;
+        }
+
+        #name:active {
+            border: 3px solid;
         }
 
         select {
@@ -192,6 +239,7 @@ main{
             margin: 0.7rem 0;
         }
 
+/* sucursales.html */
 
 #sucursalesMain {
     background-color: #000;
@@ -235,6 +283,7 @@ main{
 
 .footerContainer {
     display: flex;
+    flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem;
@@ -251,4 +300,80 @@ main{
 
 .footerContainer .smallText {
     margin: 0 0 0 1.5rem;
+}
+
+@media screen and (max-width: 678px) {
+
+    .menuContainer ul {
+        flex-direction: column;
+        
+    }
+
+    .menuContainer li {
+        width: 100%;
+    }
+
+    .textContainer h2 {
+        font-size: 6rem;
+    }
+
+    .textContainer p {
+        font-size: 1.8rem;
+    }
+
+    main {
+        margin: 3vw;
+    }
+
+
+    .sectionContainer {
+        padding: 2vw;
+    }
+
+    .footerIcons {
+        margin: 1.8vw;
+    }
+
+    .footerCol2 {
+        width: 40vw;
+    }
+    
+    .footerCol2 .smallText {
+        margin-left: 0.6rem;
+    }
+
+    .sucursal .imgContainer {
+        margin: 0 0rem 2rem 0;
+    }
+
+    #sucursalesMain iframe {
+        width: 100%;
+        height: 35vh;
+    }
+
+    #email, #phoneNumber, #name, .fileButton {
+        width: 80vw;
+    }
+
+    form textarea {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .bodyContainer {
+        min-width: 100%;
+    }
+
+    h1 {
+        font-size: 22vw;
+    }
+
+    #contacto h2 {
+        font-size: 18vw;
+    }
+
+    #sucursalesMain h2 {
+        font-size: 18vw;
+    }
 }
