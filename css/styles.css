@@ -35,7 +35,9 @@ header{
 
         .logoContainer img {
             max-width: 100%;
-            border-radius: 4px;
+       /*     border-radius: 4px;*/
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
         }
 
     .menuContainer{
@@ -304,6 +306,10 @@ main{
 
 @media screen and (max-width: 678px) {
 
+    h1 {
+        font-size: 12vw;
+    }
+
     .menuContainer ul {
         flex-direction: column;
         
@@ -366,7 +372,7 @@ main{
     }
 
     h1 {
-        font-size: 22vw;
+        font-size: 12vw;
     }
 
     #contacto h2 {
