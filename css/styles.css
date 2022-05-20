@@ -294,7 +294,8 @@ main{
     justify-content: space-between;
     padding: 1.5rem;
 
-    height: 7vh;
+   /* height: 7vh;*/
+    height: 5%;
     background-color: #000;
 }
 
@@ -332,6 +333,10 @@ main{
         font-size: 12vw;
     }
 
+    .menuContainer {
+        height: fit-content;
+    }
+
     .menuContainer ul {
         flex-direction: column;
     }
@@ -356,14 +361,6 @@ main{
 
     .sectionContainer {
         padding: 2vw;
-    }
-
-   /* .footerIcons {
-        margin: 1.8vw;
-    }*/
-
-    .footerCol2 {
-        width: 40vw;
     }
     
     .footerCol2 .smallText {
