@@ -89,6 +89,7 @@ header{
 
     .menuContainer{
         background-color: #FFF;
+        height:2.5rem;
     }
 
         .menuContainer ul{
