@@ -107,10 +107,10 @@ header{
                 text-align: center; /* alinea el texto dentro de las li */
                 font-size: 1.8rem;
 
-                -webkit-transition: background-color 0.5s ease-out, font-size 0.5s ease-out;
-                -moz-transition:  background-color 0.5s ease-out, font-size 0.5s ease-out;
-                -o-transition:  background-color 0.5s ease-out, font-size 0.5s ease-out;
-                transition: background-color 0.5s ease-out, font-size 0.5s ease-out;
+                -webkit-transition: background-color 0.3s ease-out, font-size 0.5s ease-out;
+                -moz-transition:  background-color 0.3s ease-out, font-size 0.5s ease-out;
+                -o-transition:  background-color 0.3s ease-out, font-size 0.5s ease-out;
+                transition: background-color 0.3s ease-out, font-size 0.5s ease-out;
             }
 
             .menuContainer li:hover {
@@ -350,10 +350,10 @@ main{
     height: 23px;
     vertical-align: middle;
 
-    -webkit-transition: font-size 0.5s ease-out;
-    -moz-transition:  font-size 0.5s ease-out;
-    -o-transition:  font-size 0.5s ease-out;
-    transition: font-size 0.5s ease-out;
+    -webkit-transition: font-size 0.3s ease-out;
+    -moz-transition:  font-size 0.3s ease-out;
+    -o-transition:  font-size 0.3s ease-out;
+    transition: font-size 0.3s ease-out;
 }
 
 .footerIcons:hover {
